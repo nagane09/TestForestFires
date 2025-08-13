@@ -1,5 +1,7 @@
 # Algerian Forest Fire Weather Index (FWI) Prediction 🌲🔥
 
+Deployment Link:-  https://testforestfires-2-nags.onrender.com
+
 A Machine Learning project to predict the **Forest Fire Weather Index (FWI)** in Algeria using meteorological data. FWI is a globally recognized metric to estimate wildfire risk based on temperature, humidity, wind, and other environmental factors.
 
 ---
@@ -35,10 +37,5 @@ Higher FWI indicates a higher wildfire risk.
 3. Integrating ML models with a full-stack application  
 4. Handling user inputs via a web interface  
 5. Deploying Python ML applications on the cloud  
-
----
-
-## ⚙️ How to Use
-1. Clone this repository  
    ```bash
    git clone https://github.com/your-username/ForestFireFWI.git
