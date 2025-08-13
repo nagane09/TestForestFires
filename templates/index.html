@@ -1,2 +1,78 @@
-<h1>Welcome to the home page</h1>
-<a href="/predictdata" class="btn btn-primary">Go to Prediction Page</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest Fire Prediction</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            color: #333;
+        }
+
+        /* Header section */
+        .header {
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .header h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .header p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #f0f0f0;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Button */
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #fff;
+            color: #0072ff;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0072ff;
+            color: #fff;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #005bb5;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to Forest Fire Prediction</h1>
+        <p>This project predicts the Forest Fire Weather Index (FWI) based on meteorological data such as temperature, humidity, wind speed, rainfall, and other forest fire indicators. Using Ridge Regression, it provides accurate predictions to estimate wildfire risks.</p>
+        <a href="/predictdata" class="btn">Go to Prediction Page</a>
+    </div>
+
+    <div class="footer">
+        &copy; 2025 Forest Fire Prediction Project. All rights reserved.
+    </div>
+</body>
+</html>
