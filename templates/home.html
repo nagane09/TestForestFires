@@ -7,62 +7,69 @@
     <style>
         /* General page styling */
         body {
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(to right, #a8e063, #56ab2f); /* Green gradient */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f4f8; /* Light professional background */
             display: flex;
             justify-content: center;
-            align-items: center;
-            height: 100vh;
+            align-items: flex-start; /* Align container from top */
+            
             margin: 0;
         }
 
         /* Container for the form */
         .container {
             background-color: #ffffff;
-            padding: 40px 50px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            width: 400px;
+            padding: 50px 60px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            width: 500px;
+            max-width: 95%;
             text-align: center;
         }
 
         h1 {
-            margin-bottom: 20px;
-            color: #ff7f50; /* Orange heading */
-            font-size: 32px;
-            font-weight: bold;
+            margin-bottom: 25px;
+            color: #3b3b3b; /* Dark grey professional color */
+            font-size: 40px; /* Bigger heading */
+            font-weight: 700;
         }
 
         p.description {
-            font-size: 14px;
-            color: #333;
-            margin-bottom: 25px;
+            font-size: 15px;
+            color: #555;
+            margin-bottom: 35px;
+        }
+
+        /* Form grid for two inputs per row */
+        form {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px 20px;
         }
 
         input[type="text"] {
             width: 100%;
-            padding: 12px;
-            margin: 10px 0;
-            border-radius: 8px;
+            padding: 12px 15px;
+            border-radius: 10px;
             border: 1px solid #ccc;
-            box-sizing: border-box;
             font-size: 14px;
             transition: 0.3s;
         }
 
         input[type="text"]:focus {
-            border-color: #ff7f50;
-            box-shadow: 0 0 5px rgba(255,127,80,0.5);
+            border-color: #4facfe; /* Calm blue focus */
+            box-shadow: 0 0 8px rgba(79,172,254,0.3);
             outline: none;
         }
 
+        /* Full-width button across both columns */
         button {
-            width: 100%;
+            grid-column: span 2;
             padding: 14px;
-            background-color: #ff7f50; /* Orange button */
+            background-color: #4facfe; /* Calm professional blue */
             color: white;
             border: none;
-            border-radius: 8px;
+            border-radius: 10px;
             font-size: 16px;
             cursor: pointer;
             margin-top: 15px;
@@ -70,13 +77,23 @@
         }
 
         button:hover {
-            background-color: #e06530;
+            background-color: #00f2fe; /* Lighter blue on hover */
         }
 
         h2 {
-            margin-top: 25px;
-            color: #56ab2f; /* Green result */
+            margin-top: 30px;
+            color: #2d7a7a; /* Calm green for result */
             font-weight: bold;
+        }
+
+        /* Responsive adjustments */
+        @media(max-width: 600px) {
+            form {
+                grid-template-columns: 1fr; /* Stack inputs on small screens */
+            }
+            button {
+                grid-column: span 1;
+            }
         }
     </style>
 </head>
