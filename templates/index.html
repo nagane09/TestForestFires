@@ -9,65 +9,75 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to right, #a8e063, #56ab2f);
+            background: #f9f9f9; /* Light background */
             color: #333;
         }
 
         /* Header section */
         .header {
             text-align: center;
-            padding: 80px 20px;
+            padding: 100px 20px 60px 20px;
         }
 
         .header h1 {
-            font-size: 36px;
+            font-size: 48px; /* Bigger heading */
             margin-bottom: 20px;
-            color: #fff;
+            color: #222;
+            font-weight: 700;
         }
 
         .header p {
             font-size: 18px;
-            margin-bottom: 30px;
-            color: #f0f0f0;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
+            line-height: 1.6;
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto 30px auto;
         }
 
         /* Button */
         .btn {
             display: inline-block;
-            padding: 15px 30px;
-            background-color: #fff;
-            color: #a8e063;
+            padding: 15px 35px;
+            background-color: #007BFF; /* Blue button */
+            color: #fff;
             text-decoration: none;
             font-size: 18px;
-            border-radius: 8px;
+            border-radius: 10px;
+            font-weight: 600;
             transition: 0.3s;
         }
 
         .btn:hover {
-            background-color: #a8e063;
-            color: #fff;
+            background-color: #0056b3;
         }
 
         /* Footer */
         .footer {
             text-align: center;
             padding: 20px;
-            background-color: #56ab2f;
+            background-color: #222;
             color: #fff;
             position: fixed;
             bottom: 0;
             width: 100%;
+            font-size: 14px;
         }
 
+        /* Responsive adjustments */
+        @media(max-width: 600px) {
+            .header h1 {
+                font-size: 36px;
+            }
+            .header p {
+                font-size: 16px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="header">
         <h1>Welcome to Forest Fire Prediction</h1>
-        <p>This project predicts the Forest Fire Weather Index (FWI) based on meteorological data such as temperature, humidity, wind speed, rainfall, and other forest fire indicators. Using Ridge Regression, it provides accurate predictions to estimate wildfire risks.</p>
+        <p>Predict the Forest Fire Weather Index (FWI) using meteorological data like temperature, humidity, wind speed, and rainfall. Get quick and reliable predictions to help estimate wildfire risks.</p>
         <a href="/predictdata" class="btn">Go to Prediction Page</a>
     </div>
 
